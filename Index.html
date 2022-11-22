@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome: <br/>
+                <input type="text" name="name" required>
+            </label><br/>
+            <label>
+                Sobrenome: <br/>
+                <input type="text" name="lastname"required>
+            </label><br/>
+            <label>
+                Data de nascimento: <br/>
+                <input type="date" name="birthdate">
+            </label><br/>
+            <label>
+                Email: <br/>
+                <input type="email">
+            </label><br/>
+            <label>
+                Escolaridade: <br/>
+                <select name="Escolaridade">
+                    <option></option>
+                    <option value="1">Primeiro Grau</option>
+                    <option value="2">Segundo Grau</option>
+                    <option value="3">Superior Incompleto</option>
+                    <option value="4">Superior Completo</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da Empresa: <br/>
+                <input type="text" name="companyname">                
+            </label><br/>
+            <label>
+                Cargo na empresa: <br/>
+                <input type="text" name="companyjobtitle">
+            </label><br/>
+            <label>
+                Descrição: <br/>
+                <textarea name="Descrição" id="" cols="30" rows="10"></textarea>
+            </label>            
+            
+        </fieldset>
+        <label>
+            <input type="checkbox">
+            Eu declaro que li e aceito os <a href="termoslink.html" target="_blank" class="termoslink">termos de Uso</a>
+        </label><br/>
+        
+        <input type="submit" value="Fazer Cadastro">
+    </form>
+</body>
+</html>
